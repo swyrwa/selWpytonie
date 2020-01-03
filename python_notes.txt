@@ -190,9 +190,9 @@ name = "Sim"
 experience_years = 1.5
 print("Hi {}, you have {} years of experience".format(name, experience_years))
 Output: Hi Sim, you have 1.5 years of experience.
-=================================
+================================
 Loops
-=================================
+================================
 LOOPING OVER DICTIONARY
 You can combine a dictionary for loop with string formatting to create text containing information from the dictionary:
 
