@@ -35,14 +35,23 @@ Functions
   print(type(a))
   for i in range(2,4): print(i)
 
-===========================
+=======================================
 Lists, dictionaries, tuples, sets
-===========================
+=======================================
 
 !!!! Lists !!!! represent arrays of values that may change during the course of the program:
-
+[]
 members = ["Sim Soony", "Marry Roundknee", "Jack Corridor"]
 pixel_values = [252, 251, 251, 253, 250, 248, 247]
+
+!!!! Tuples !!!! represent arrays of values that are not to be changed during the course of the program:
+()
+vowels = ('a', 'e', 'i', 'o', 'u')
+one_digits = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+!!!!! Dictionaries !!!!!
+{}
+
 Dictionaries represent pairs of keys and values:
 
 phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
@@ -53,12 +62,6 @@ phone_numbers.keys()
 Values of a dictionary can be extracted with:
 
 phone_numbers.values()
-!!!! Tuples !!!! represent arrays of values that are not to be changed during the course of the program:
-
-vowels = ('a', 'e', 'i', 'o', 'u')
-one_digits = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
-
-
 ====================================
 Positive/Negative Indexes, Slicing
 ====================================
@@ -282,3 +285,7 @@ While True:
 			break
 		else:
 			continue
+
+=======================
+KLASA i OBIEKT
+=======================
