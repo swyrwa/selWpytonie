@@ -39,17 +39,17 @@ Functions
 Lists, dictionaries, tuples, sets
 =======================================
 
-!!!! Lists !!!! represent arrays of values that may change during the course of the program:
+!!!! Lists !!!! List is a collection which is ordered and changeable. Allows duplicate members.:
 []
 members = ["Sim Soony", "Marry Roundknee", "Jack Corridor"]
 pixel_values = [252, 251, 251, 253, 250, 248, 247]
 
-!!!! Tuples !!!! represent arrays of values that are not to be changed during the course of the program:
+!!!! Tuples !!!! is a collection which is ordered and unchangeable. Allows duplicate members:
 ()
 vowels = ('a', 'e', 'i', 'o', 'u')
 one_digits = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
 
-!!!!! Dictionaries !!!!!
+!!!!! Dictionaries !!!!! is a collection which is unordered, changeable and indexed. No duplicate members.
 {}
 
 Dictionaries represent pairs of keys and values:
@@ -62,6 +62,8 @@ phone_numbers.keys()
 Values of a dictionary can be extracted with:
 
 phone_numbers.values()
+
+!!!!!!!!! Set !!!!!!!! Set is a collection which is unordered and unindexed. No duplicate members
 ====================================
 Positive/Negative Indexes, Slicing
 ====================================
@@ -289,3 +291,40 @@ While True:
 =======================
 KLASA i OBIEKT
 =======================
+
+
+=============================================
+dziedziczenie paczek z poziom command line'a
+=============================================
+dla nowego projektu -> inherit global site packages
+
+============
+SELENIUM
+============
+demo do cwiczen:
+http://www.kurs-selenium.pl/demo/
+
+http://seleniumdemo.com/
+
+++++++++
+pobieranie drivera
++++++++++++
+sprawdz wersje przegladarki-> settings/help
+
+rozpakowanego drivera exe, kopiuje i wklejam w folderze drivers(utworz jesli nie ma) w swoim projekcie
+potem tworze zmienna driver korzystajaca z webdriver'a:
+driver = webdriver.Chrome(<sciezka do pliku exe w cudzyslowiu>) ! pamietaj ze sciezka ma sie konczyc nazwa pliku drivera czyli
+ chromedriver.exe ORAZ dodajemy r na poczatku przed cudzyslowiem (nie wiem dlaczego)
+
+ ++++++++++++
+ maksymalizacja okna przegladarki
+ ++++++++++++
+
+ maximize_window -> jesli ustawimy okno na maksymalne mozemy zmniejszyc stabilnosc testow; ustawielnie stalego rozmiaru okn
+ stabilnosc zwieksza bo nie jest zalezna od komputera na ktorym odpalamy test
+
+ ++++++++++++++
+ driver.close() vs driver.quit()
+ ++++++++++++++
+ close - zamyka okno na ktorym byl fokus czyli na ktorym dzialalismy
+ quit - zamyka wszystkie okna

@@ -62,3 +62,21 @@
 #     else:
 #         return print("{} jest liczbą pierwszą.".format(liczba))
 # czyLiczbaPierwsza()
+
+#zad6
+#palindorm
+# import re
+#
+# def czyPalindrom(word):
+#     word = re.sub('\ |\?|\!|\:|\,|\.|\-|\'|\"', '',word)
+#     backwards = word[::-1].lower()
+#     print(backwards)
+#
+#     if backwards == word.lower():
+#         return print("{} jest palindromem" .format(word))
+#     else:
+#         return print("{} nie jest palindromem" .format(word))
+#
+#
+# czyPalindrom("A man, a plan, a canal - Panama!")
+# czyPalindrom("Madam, I'm Adam")
