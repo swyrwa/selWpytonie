@@ -328,3 +328,10 @@ driver = webdriver.Chrome(<sciezka do pliku exe w cudzyslowiu>) ! pamietaj ze sc
  ++++++++++++++
  close - zamyka okno na ktorym byl fokus czyli na ktorym dzialalismy
  quit - zamyka wszystkie okna
+ 
+ 
+ +++++++++++
+ find_element(By.<ID lub link text lub name lub class>
+ 
+ ++++++++++
+ sciezka relatywna w xpath
